@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+
+}
+
+
+/* HEADER & NAV */
+header {
+  background-color: #4b0000;
+  padding: 20px 40px;
+  width: 100%; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.logo {
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #ffe60093;
+}
+
+.franqueado-btn {
+  background-color: #fff;
+  color: #8B0000;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.franqueado-btn:hover {
+  background-color: #FFD700;
+  color: #8B0000;
+}
+
+/* CARROSSEL */
+.carrossel {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 40px 20px;
+  border-radius: 12px;
+
+}
+
+.carrosel__track-container {
+  overflow: hidden;
+}
+
+.carrosel__track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carrosel__slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel_image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.descricao-prato {
+  margin-top: 15px;
+}
+
+.descricao-prato h2 {
+  font-family: "Tagesschrift", system-ui;
+  font-size: 28px;
+  color: #8B0000;
+}
+
+.descricao-prato p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Botões do carrossel */
+.carrosel_buttton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel__button--left {
+  left: 10px;
+}
+
+.carousel__button--right {
+  right: 10px;
+}
+
+.carrosel_buttton:hover {
+  background-color: #FFD700;
+  transition-duration: 1.5s;
+  color: #8B0000;
+}
+
+/* CONTAINER DE IMAGENS */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.img_delivery, .img_clube, .img_descontos {
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+}
+
+
+.img_delivery:hover, .img_clube:hover, .img_descontos:hover {
+  transform: translateY(-5px);
+}
+
+.img_delivery img,
+.img_clube img,
+.img_descontos img {
+  width: 100%;
+  height: auto;
+}
+
+.descricao_ifood h2,
+.descricao_clube h2,
+.descricao_registrar h2 {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+/* SEJA UM FRANQUEADO */
+.lojas-franqueadas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px; 
+  margin: 80px auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.conteudo-frase {
+    flex: 1;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.serfranqueado {
+    font-size: 48px;
+    font-weight: 700;
+    color: #271e1e; 
+    margin-bottom: 20px;
+}
+
+.conteudo-frase p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.btn-franquado {
+    margin-top: 30px;
+    background-color: #7a1e1e; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-franquado:hover {
+    background-color: #380101;
+}
+
+.imagem-franquia {
+    flex: 1;
+}
+
+.imagem-franquia img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #5e0c0c;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+  left: 400px;
+}
+
+.footer-col ul li {
+  position: relative;
+  left: 400px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ececec;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #f8f400;
+
+}
+
+.footer-la h1 {
+    color: #fff;
+    font-size: 34px;
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    position: relative;
+    top: -240px;
+    right: 240px;
+}
+
+.footer-la h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: relative;
+    top: -230px;
+    right: 240px;
+}
+
+.footer-social-icons {
+    position: relative;
+    top: -100px;
+    right: 820px;
+    margin-right: 10px;
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+footer-social-icons a {
+  margin-right: 10px;
+  font-size: 22px;
+  transition: transform 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: #a38b01;
+  transform: scale(1.2);
+}
+
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+
+}
+
+
+/* HEADER & NAV */
+header {
+  background-color: #4b0000;
+  padding: 20px 40px;
+  width: 100%; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.logo {
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #ffe60093;
+}
+
+.franqueado-btn {
+  background-color: #fff;
+  color: #8B0000;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.franqueado-btn:hover {
+  background-color: #FFD700;
+  color: #8B0000;
+}
+
+/* NOSSA HISTÓRIA */
+.historia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 10px;
+  margin: 35px 65px;
+  flex-wrap: wrap;
+}
+
+.historia-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.historia-texto h1 {
+  font-size: 40px;
+  color: #105f00;
+  margin-bottom: 20px;
+}
+
+.historia-texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+.img-chef {
+float: right;
+  max-width: 50%;
+  margin: 40px 0 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+ 
+}
+
+.img-chef img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #5e0c0c;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+  left: 400px;
+}
+
+.footer-col ul li {
+  position: relative;
+  left: 400px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ececec;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #f8f400;
+
+}
+
+.footer-la h1 {
+    color: #fff;
+    font-size: 34px;
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    position: relative;
+    top: -240px;
+    right: 240px;
+}
+
+.footer-la h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    position: relative;
+    top: -230px;
+    right: 240px;
+}
+
+.footer-social-icons {
+    position: relative;
+    top: -100px;
+    right: 820px;
+    margin-right: 10px;
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+footer-social-icons a {
+  margin-right: 10px;
+  font-size: 22px;
+  transition: transform 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: #a38b01;
+  transform: scale(1.2);
+}
+
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* SEJA UM FRANQUEADO */
+.lojas-franqueadas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px; 
+  margin: 80px auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.conteudo-frase {
+    flex: 1;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.serfranqueado {
+    font-size: 48px;
+    font-weight: 700;
+    color: #271e1e; 
+    margin-bottom: 20px;
+}
+
+.conteudo-frase p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.btn-franquado {
+    margin-top: 30px;
+    background-color: #7a1e1e; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-franquado:hover {
+    background-color: #380101;
+}
+
+.imagem-franquia {
+    flex: 1;
+}
+
+.imagem-franquia img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}

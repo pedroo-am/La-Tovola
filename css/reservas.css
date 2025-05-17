@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  padding: 40px 10px; 
+  margin: 35px 65px; 
+}
+
+
+/* HEADER & NAV */
+header {
+  background-color: #4b0000;
+  padding: 20px 40px;
+  width: 100%; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; 
+}
+
+.logo {
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+} 
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #ffe60093;
+}
+
+.franqueado-btn {
+  background-color: #fff;
+  color: #8B0000;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.franqueado-btn:hover {
+  background-color: #FFD700;
+  color: #8B0000;
+}
+/*FORMULÁRIO */
+
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdf6ec;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+   padding-top: 100px;
+}
+
+.form-box {
+  flex: 1;
+  padding: 60px;
+  background-color: #fdf6ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-box h1 {
+  font-size: 40px;
+  color: #4a0e0e;
+  margin-bottom: 30px;
+}
+
+.form-box h1 span {
+  display: block;
+}
+
+form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #4a0e0e;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.date-group {
+  display: flex;
+  gap: 10px;
+}
+
+.date-group input {
+  flex: 1;
+}
+
+button {
+  background-color: #c69720;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a37815;
+}
+
+.img-vinho {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+.img-vinho img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
